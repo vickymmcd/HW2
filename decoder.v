@@ -8,8 +8,6 @@
 module behavioralDecoder
 (
     output out0, out1, out2, out3,
-    output enabledA0, enabledA1,
-    output notA0, notA1, notA0enabled, notA1enabled,
     input address0, address1,
     input enable
 );
