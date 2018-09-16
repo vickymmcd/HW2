@@ -29,5 +29,7 @@ module testMultiplexer ();
   $display("%b  %b  | %b  %b  %b  %b  | %b | 0", addr0, addr1, in0, in1, in2, in3, out);
   in0=0;in1=0;in2=0;in3=1;addr0=1;addr1=1; #1000
   $display("%b  %b  | %b  %b  %b  %b  | %b | 1", addr0, addr1, in0, in1, in2, in3, out);
+  $dumpfile("test.vcd");
+  $dumpvars;
   end
 endmodule
